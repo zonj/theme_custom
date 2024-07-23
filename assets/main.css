@@ -1,0 +1,20 @@
+* {
+	font-family: 'ubuntu-regular';
+	margin: 0 auto;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'ubuntu-regular';
+	src: url('https://cdn.shopify.com/s/files/1/0581/5563/0691/files/Ubuntu-Regular.ttf?v=1721742959');
+}
+
+@font-face {
+	font-family: 'ubuntu-medium';
+	src: url('https://cdn.shopify.com/s/files/1/0581/5563/0691/files/Ubuntu-Medium.ttf?v=1721742959');
+}
+
+@font-face {
+	font-family: 'ubuntu-bold';
+	src: url('https://cdn.shopify.com/s/files/1/0581/5563/0691/files/Ubuntu-Bold.ttf?v=1721742959');
+}
