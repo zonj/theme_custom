@@ -1,12 +1,8 @@
 {
-	"name": "Colors",
-	"settings": [
-	  {
-		"type": "color",
-		"id": "color_page_bg",
-		"label": "Page background",
-		"default": "#FFFFFF"
-	  }
-	]
-  }
+	"current": "Default",
+	"presets": {
+		"Default": {
+		}
+	}
+}
   
