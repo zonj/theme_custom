@@ -1,7 +1,12 @@
 {
-	"current": "Default",
+	"current": {
+		"logo":"",
+		"logo_width": 150,
+		"favicon": "",
+	},
 	"presets": {
 		"Default": {
+			"logo_width": 90,
 		}
 	}
 }

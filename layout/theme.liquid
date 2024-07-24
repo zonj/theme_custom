@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% if settings.favicon != blank %}
+			<link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+		{% endif %}
 		<link href="./assets/tailwind-output.css" rel="stylesheet">
 		{{ 'main.css' | asset_url | stylesheet_tag }}
 		{{ 'styles-tw-output.css' | asset_url | stylesheet_tag }}
