@@ -1,0 +1,21 @@
+<div id="Banner-{{ section.id }}" class="banner banner--content">
+	<img src="{{ section.settings.image | img_url: '300x300' }}">
+</div>
+
+{% schema %}
+{
+	"name": "Image Banner",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "image picker"
+		}
+	],
+	"presets": [
+		{
+			"name": "Image Banner"
+		}
+	]
+}
+{% endschema %}

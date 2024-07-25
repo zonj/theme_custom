@@ -1,13 +1,16 @@
 {
 	"sections": {
-		"main": {
-			"type": "index",
-			"settings": {
+		// "main": {
+		// 	"type": "index",
+		// 	"settings": {
 
-			}
+		// 	}
+		// },
+		"image_banner": {
+			"type": "image-banner"
 		}
 	},
 	"order": [
-		"main"
+		"image_banner",
 	]
 }

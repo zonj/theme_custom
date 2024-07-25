@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{% if settings.favicon != blank %}
-			<link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+		<link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
 		{% endif %}
 		<link href="./assets/tailwind-output.css" rel="stylesheet">
 		{{ 'main.css' | asset_url | stylesheet_tag }}
@@ -12,7 +12,7 @@
 		<title>{{ shop.name }}</title>
 		{{ content_for_header }}
 	</head>
-	<body>
+	<body class="template--{{ template.name }}"> <!-- Template-specific CSS selector => class="template--{{ template.name }}" -->
 		{{ content_for_layout }}
 	</body>
 </html>
