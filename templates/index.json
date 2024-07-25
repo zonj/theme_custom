@@ -1,16 +1,20 @@
 {
-	"sections": {
-		// "main": {
-		// 	"type": "index",
-		// 	"settings": {
-
-		// 	}
-		// },
-		"image_banner": {
-			"type": "image-banner"
-		}
-	},
-	"order": [
-		"image_banner",
-	]
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-1-square-nimble-made-7rims-nmsbc-unsplash-jpg_custom_resized.jpg"
+      }
+    },
+    "image_banner_yHnRNW": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/matheus-frade-p4miRVdyapQ-unsplash.jpg"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "image_banner_yHnRNW"
+  ]
 }
