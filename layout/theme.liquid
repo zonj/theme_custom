@@ -13,6 +13,7 @@
 		{{ content_for_header }}
 	</head>
 	<body class="template--{{ template.name }}"> <!-- Template-specific CSS selector => class="template--{{ template.name }}" -->
+		{% sections 'header-group' %} 
 		{{ content_for_layout }}
 	</body>
 </html>
