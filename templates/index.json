@@ -1,20 +1,31 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_tMMCG8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-1-square-nimble-made-7rims-nmsbc-unsplash-jpg_custom_resized.jpg"
+          }
+        },
+        "slide_PWUPMW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/matheus-frade-p4miRVdyapQ-unsplash.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_tMMCG8",
+        "slide_PWUPMW"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1-1-square-nimble-made-7rims-nmsbc-unsplash-jpg_custom_resized.jpg"
-      }
-    },
-    "image_banner_yHnRNW": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/matheus-frade-p4miRVdyapQ-unsplash.jpg"
+        "title": "meow"
       }
     }
   },
   "order": [
-    "image_banner",
-    "image_banner_yHnRNW"
+    "slideshow"
   ]
 }
