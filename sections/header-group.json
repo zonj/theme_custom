@@ -4,8 +4,26 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "blocks": {
+        "text_yJx7Yp": {
+          "type": "text",
+          "settings": {
+            "title": "FREE SHIPPING"
+          }
+        },
+        "text_ATUzgc": {
+          "type": "text",
+          "settings": {
+            "title": "DISCOUNT CODE \"ABC123\""
+          }
+        }
+      },
+      "block_order": [
+        "text_yJx7Yp",
+        "text_ATUzgc"
+      ],
       "settings": {
-        "announcement": ""
+        "title": "THE SKINNY BANNER"
       }
     },
     "header": {

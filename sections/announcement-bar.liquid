@@ -1,4 +1,9 @@
-<p>Announcement Bar</p>
+<h1>{{ section.settings.title }}</h1>
+
+{% for block in section.blocks %}
+	<p>{{ block.settings.title }}</p>
+{% endfor %}
+
 {% schema %}
 {
 	"name": "Announcement Bar",
@@ -6,10 +11,25 @@
 	"settings": [
 		{
 			"type": "text",
-			"id": "announcement",
+			"id": "title",
 			"label": "Announcement Bar"
 		}
-	]
-
+	],
+	"blocks": [
+		{
+			"type": "text",
+			"name": "Text",
+			"settings": [
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Default"
+				}
+			]
+		}
+	],
+	"enabled_on": {
+		"groups": ["header"]
+	}
 }
 {% endschema %}
