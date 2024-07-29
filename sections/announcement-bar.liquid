@@ -1,6 +1,7 @@
 <h1>{{ section.settings.title }}</h1>
 
 {% for block in section.blocks %}
+	<p>{{ block.id }}</p>
 	<p>{{ block.settings.title }}</p>
 {% endfor %}
 
@@ -8,6 +9,7 @@
 {
 	"name": "Announcement Bar",
 	"tag": "section",
+	"class": "announcement-bar",
 	"settings": [
 		{
 			"type": "text",

@@ -10,6 +10,14 @@
 		{{ 'main.css' | asset_url | stylesheet_tag }}
 		{{ 'styles-tw-output.css' | asset_url | stylesheet_tag }}
 		<title>{{ shop.name }}</title>
+		<style>
+			.announcement-bar {
+				background: navy;
+			}
+			.main-header {
+				background: yellow;
+			}
+		</style>
 		{{ content_for_header }}
 	</head>
 	<body class="template--{{ template.name }}"> <!-- Template-specific CSS selector => class="template--{{ template.name }}" -->
