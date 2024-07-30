@@ -1,9 +1,22 @@
-<h1>{{ section.settings.title }}</h1>
+{{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'announcement-bar.js' | asset_url }}" defer="defer"></script>
 
-{% for block in section.blocks %}
-	<p>{{ block.id }}</p>
-	<p>{{ block.settings.title }}</p>
-{% endfor %}
+{% if section.settings.show_announcement %}
+	{% assign announcement_count = section.blocks.size %}
+	{% if announcement_count > 1 %}
+	<div class="announcement-bar-container container text-center py-4">
+		<div class="announcement-slider">
+			{% for block in section.blocks %}
+				<p class="announcement-slide">{{ block.settings.title }}</p>
+			{% endfor %}
+		</div>
+	</div>
+	{% elsif announcement_count == 1 %}
+	<div class="container text-center py-2">
+		<p class="single-announcement-bar">{{ section.blocks.first.settings.title }}</p>
+	</div>
+	{% endif %}
+{% endif %}
 
 {% schema %}
 {
@@ -12,11 +25,18 @@
 	"class": "announcement-bar",
 	"settings": [
 		{
+			"type": "checkbox",
+			"id": "show_announcement",
+			"label": "Show Announcement",
+			"default": false
+		},
+		{
 			"type": "text",
 			"id": "title",
 			"label": "Announcement Bar"
 		}
 	],
+	"max_blocks": 5,
 	"blocks": [
 		{
 			"type": "text",
@@ -32,6 +52,7 @@
 	],
 	"enabled_on": {
 		"groups": ["header"]
-	}
+	},
+
 }
 {% endschema %}

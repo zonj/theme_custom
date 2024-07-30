@@ -5,31 +5,39 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "text_yJx7Yp": {
+        "text_M7UHnf": {
           "type": "text",
           "settings": {
-            "title": "FREE SHIPPING"
+            "title": "Welcome to our Store"
           }
         },
-        "text_ATUzgc": {
+        "text_fXPiqP": {
           "type": "text",
           "settings": {
-            "title": "DISCOUNT CODE \"ABC123\""
+            "title": "20% OFF WITH MINIMUM PURCHASE OF 2 ITEMS USING \"BUY2OFF20\""
+          }
+        },
+        "text_ED9f4w": {
+          "type": "text",
+          "settings": {
+            "title": "FREE SHIPPING MINIMUM SPEND 1000"
           }
         }
       },
       "block_order": [
-        "text_yJx7Yp",
-        "text_ATUzgc"
+        "text_M7UHnf",
+        "text_fXPiqP",
+        "text_ED9f4w"
       ],
       "settings": {
+        "show_announcement": true,
         "title": "THE SKINNY BANNER"
       }
     },
     "header": {
       "type": "header",
       "settings": {
-        "title": "HEADER"
+        "title": ""
       }
     }
   },
