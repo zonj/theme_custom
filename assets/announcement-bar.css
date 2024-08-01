@@ -1,3 +1,6 @@
+.announcement-bar {
+    background: yellow;
+}
 .announcement-bar-container {
     position: relative;
     width: 100%;
