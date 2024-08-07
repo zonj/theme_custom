@@ -1,10 +1,10 @@
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'announcement-bar.js' | asset_url }}" defer="defer"></script>
+{% comment %} <script src="{{ 'announcement-bar.js' | asset_url }}" defer="defer"></script> {% endcomment %}
 
 {% if section.settings.show_announcement %}
 	{% assign announcement_count = section.blocks.size %}
 	{% if announcement_count > 1 %}
-	<div class="announcement-bar-container container text-center py-4">
+	<div class="announcement-bar-container container text-center py-2">
 		<div class="announcement-slider">
 			{% for block in section.blocks %}
 				<p class="announcement-slide">{{ block.settings.title }}</p>

@@ -13,12 +13,14 @@
         },
         "text_fXPiqP": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "20% OFF WITH MINIMUM PURCHASE OF 2 ITEMS | DISCOUNT CODE \"BUY2OFF20\""
           }
         },
         "text_ED9f4w": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "FREE SHIPPING MINIMUM SPEND 1000"
           }

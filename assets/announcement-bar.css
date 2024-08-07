@@ -1,4 +1,7 @@
 .announcement-bar {
+    background: #f0c36f;
+}
+/* .announcement-bar {
     background: yellow;
 }
 .announcement-bar-container {
@@ -33,4 +36,4 @@
     10% { opacity: 1; }
     90% { opacity: 1; }
     100% { opacity: 0; }
-}
+} */

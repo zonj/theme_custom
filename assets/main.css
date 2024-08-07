@@ -1,7 +1,19 @@
+/* 
+COLOR PALETTES
+					Hex			RGB
+Rich Red			#9c2c2c		(156,44,44)
+Soft Yellow			#f0c36f		(240,195,111)
+Light Background	#f4f7f6		(244,247,246)
+Calming Green		#c9dcd6		(201,220,214)
+Dark Grey			#3f3f3f		(63,63,63)
+*/
+
+
 * {
 	font-family: 'ubuntu-regular';
 	margin: 0 auto;
 	padding: 0;
+	color: #3f3f3f;
 }
 
 @font-face {
