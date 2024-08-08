@@ -1,0 +1,25 @@
+{{ 'hero-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-banner-container">
+    {% if section.settings.hero-banner %}
+        <img src="{{ section.settings.hero-banner | img_url: 'master' }}" alt="Hero Banner">
+    {% else %}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+</div>
+
+{% schema %}
+{
+    "name": "Hero Banner",
+    "tag": "section",
+    "class": "hero-banner",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "hero-banner",
+            "label": "Hero Banner"
+        }
+    ]
+
+}
+{% endschema %}
